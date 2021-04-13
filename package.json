@@ -1,0 +1,25 @@
+{
+  "name": "edamam-graphql-wrapper",
+  "version": "1.0.0",
+  "description": "GraphQL wrapper for Edamam's Recipe Search API",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Henry Larson",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.22.2",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15"
+  }
+}
