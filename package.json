@@ -5,9 +5,9 @@
   "keywords": [],
   "license": "ISC",
   "author": "Henry Larson",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "babel-node src/index.js"
+    "serve": "babel-node src/app.js"
   },
   "dependencies": {
     "apollo-server-express": "^2.22.2",

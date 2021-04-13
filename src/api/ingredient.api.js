@@ -1,7 +1,7 @@
 const {readFileSync} = require('fs');
-const {basename} = require('path')
+const {parse} = require('path')
 
-const typeDefs = readFileSync(`${__dirname}/${basename(__filename)}.gql`, 'utf-8');
+const typeDefs = readFileSync(`${__dirname}/${parse(__filename).name}.gql`, 'utf-8');
 
 const resolvers = {
     Ingredient: {
