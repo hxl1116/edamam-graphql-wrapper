@@ -35,4 +35,6 @@ class Api {
     }
 }
 
-export const explorer = new Api();
+module.exports = {
+    explorer: new Api()
+}
