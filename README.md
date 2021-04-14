@@ -4,14 +4,14 @@ A wrapper for Edamam's Recipe Search API made with GraphQL and Apollo Server.
 ## Installation
 User Docker's command line to pull the image from Docker Hub
 ```bash
-docker pull neutronchicken/edamam-recipe-search-graphql-wrapper:latest
+docker pull neutronchicken/ers-gql-wrap:latest
 ```
 
 ## Usage
-Run a container with the `edamam-recipe-search-graphql-wrapper` image
+Run a container with the `ers-gql-wrap` image
 ```bash
-docker run --name=[container_name] -d -p [port]:8080 neutronchicken/edamam-recipe-search-graphql-wrapper:latest
+docker run --name=[container_name] -d -p [port]:8080 neutronchicken/ers-gql-wrap:latest
 ```
 
-Optionally, provide the `PORT` environment variable with the `--env-file=[path/to/.env]` flag.
+Optionally, provide the `PORT` environment variable with the `--env=PORT` flag.
 Just be sure to match the container's port to `PORT`.
