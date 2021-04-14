@@ -13,5 +13,5 @@ Run a container with the `ers-gql-wrap` image
 docker run --name=[container_name] -d -p [port]:8080 neutronchicken/ers-gql-wrap:latest
 ```
 
-Optionally, provide the `PORT` environment variable with the `--env=PORT` flag.
+Optionally, provide the `BASE_URL` and `PORT` environment variables with the `--env-file=[path/to/.env]` flag.
 Just be sure to match the container's port to `PORT`.
