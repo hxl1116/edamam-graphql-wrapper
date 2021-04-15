@@ -1,9 +1,9 @@
-const {readFileSync} = require('fs');
-const {parse} = require('path')
+import {readFileSync} from 'fs';
+import {parse} from 'path';
 
-const typeDefs = readFileSync(`${__dirname}/${parse(__filename).name}.gql`, 'utf-8');
+export const typeDefs = readFileSync(`${__dirname}/${parse(__filename).name}.gql`, 'utf-8');
 
-const resolvers = {
+export const resolvers = {
     Ingredient: {
         foodId: ingr => ingr['food_id'],
         quantity: ingr => ingr['quantity'],
@@ -27,8 +27,3 @@ const resolvers = {
         label: food => food['label']
     }
 }
-
-module.exports = {
-    typeDefs,
-    resolvers
-};

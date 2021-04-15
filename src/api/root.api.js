@@ -1,10 +1,10 @@
-const {readFileSync} = require('fs');
-const {parse} = require('path')
-const axios = require('axios');
+import {readFileSync} from 'fs';
+import {parse} from 'path';
+import axios from "axios";
 
-const typeDefs = readFileSync(`${__dirname}/${parse(__filename).name}.gql`, 'utf-8');
+export const typeDefs = readFileSync(`${__dirname}/${parse(__filename).name}.gql`, 'utf-8');
 
-const resolvers = {
+export const resolvers = {
     Query: {
         search: (parent, args) => {
             return axios.get(buildUrl(args))
@@ -31,8 +31,3 @@ const buildUrl = args => {
 
     return `${process.env.BASE_URL}?${params.join('&')}`
 }
-
-module.exports = {
-    typeDefs,
-    resolvers
-};

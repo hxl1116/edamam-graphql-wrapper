@@ -1,0 +1,14 @@
+type Hit {
+    recipe: Recipe!,
+    bookmarked: Boolean!
+    bought: Boolean!
+}
+
+type Hits {
+    q: String!,
+    from: Int!,
+    to: Int!,
+    count: Int!,
+    more: Boolean!,
+    hits: [Hit!]!
+}
