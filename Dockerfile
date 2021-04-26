@@ -6,6 +6,8 @@ ARG BASE_URL=https://api.edamam.com/search
 ENV port $PORT
 ENV base_url $BASE_URL
 
+EXPOSE $port
+
 WORKDIR .
 COPY package.json package-lock.json .babelrc ./
 RUN npm install
